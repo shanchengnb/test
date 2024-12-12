@@ -1,0 +1,52 @@
+#shancheng
+---
+title: "Name: Cheng Shan"
+author: 
+  - |
+      | Student number: 24034306
+date: "`r format(Sys.time(), '%X, %d %B, %Y')`"
+output: html_document
+---
+
+
+# Originality declaration
+
+I, [**Cheng Shan**], confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+
+date: `r format(Sys.time(), '%d %B, %Y')
+
+
+# Research Question:
+What temporal and spatial patterns are observed in eviction events across New York City from 2017 to 2024? How does a comparative analysis of pre-COVID, during-COVID, and post-COVID phases reveal the influencing factors and evolving trends of eviction activities?
+### 1. Introduction
+Eviction is a critical social and economic issue, often reflecting underlying patterns of housing insecurity, policy interventions, and broader economic conditions. This report examines the spatial and temporal distribution of eviction events across New York City from 2017 to 2024. By comparing eviction trends across three distinct phases—pre-COVID (2017–2019), during-COVID (2020–2021), and post-COVID (2022–2024)—the study identifies key patterns, influencing factors, and policy implications.
+### 2. Data Overview and Methodology
+
+#### 2.1 Data Sources
+
+-   **Eviction Data**: Includes detailed records of eviction events across NYC, with attributes like date, borough, type (residential or commercial), and associated marshal activity.
+-   **Spatial Data**: Community district boundaries and borough-level geometries for spatial analysis.
+-   **COVID Phases**:
+    -   Pre-COVID: 2017–2019
+    -   During-COVID: 2020–2021 (eviction moratorium period)
+    -   Post-COVID: 2022–2024 (lifting of moratorium and economic recovery).
+
+#### 2.2 Analytical Tools
+
+-   **Temporal Analysis**: Aggregation of eviction counts by year, month, and day of the week.
+-   **Spatial Analysis**: Local Moran's I statistics to identify spatial autocorrelation and clustering.
+-   **Marshal Analysis**: Examination of individual marshals' activities across phases to reveal operational trends and geographic focus.
+
+#### 2.3 Key Metrics
+
+-   **Eviction Counts**: Total events aggregated by phase, borough, and type (residential/commercial).
+-   **Spatial Clustering**: Identification of High-High and Low-Low clusters using Local Moran's I.
+-   **Temporal Trends**: Distribution of evictions across months and days of the week.
+
+###3. Data Limitations Incomplete Data:
+
+Some eviction records lack geographic or temporal details, which may introduce biases in spatial or temporal analyses. Limited information on underlying socio-economic factors (e.g., income levels, unemployment rates) hinders deeper causal analysis. Marshal Activity Data:
+
+The available data focuses on eviction counts but lacks context on how marshals' roles and resources differ, which could clarify workload distribution. Community District Boundaries:
+
+Fixed geographic boundaries may not fully account for demographic and economic shifts over time, potentially underestimating changes in eviction patterns. COVID Impact Granularity:
